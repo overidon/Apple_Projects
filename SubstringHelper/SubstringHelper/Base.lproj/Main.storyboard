@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SubstringHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a word or phrase below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh3-wr-D02">
+                                <rect key="frame" x="16" y="29" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minimum index" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YJp-Mg-WUL">
+                                <rect key="frame" x="16" y="126" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Maximum Index" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDS-7i-Ttv">
+                                <rect key="frame" x="228" y="126" width="76" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="UKc-QR-kLG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Substring will be below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT8-v1-HXf">
+                                <rect key="frame" x="16" y="188" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-fx-7Ek">
+                                <rect key="frame" x="16" y="240" width="288" height="37"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="...enter word here" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="iEL-QB-s4A">
+                                <rect key="frame" x="16" y="67" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2wo-fx-7Ek" firstAttribute="top" secondItem="HT8-v1-HXf" secondAttribute="bottom" constant="31" id="3ER-Cj-uJ7"/>
+                            <constraint firstItem="bh3-wr-D02" firstAttribute="leading" secondItem="iEL-QB-s4A" secondAttribute="leading" id="9Ab-yT-wC1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2wo-fx-7Ek" secondAttribute="bottom" constant="240" id="Ado-0X-14k"/>
+                            <constraint firstItem="iEL-QB-s4A" firstAttribute="leading" secondItem="YJp-Mg-WUL" secondAttribute="leading" id="Cjr-ic-Nfh"/>
+                            <constraint firstItem="2wo-fx-7Ek" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IzZ-dY-1IV"/>
+                            <constraint firstItem="iEL-QB-s4A" firstAttribute="top" secondItem="bh3-wr-D02" secondAttribute="bottom" constant="17" id="NCo-X0-mXE"/>
+                            <constraint firstItem="HT8-v1-HXf" firstAttribute="trailing" secondItem="2wo-fx-7Ek" secondAttribute="trailing" id="Sbn-xs-cyx"/>
+                            <constraint firstItem="bh3-wr-D02" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="b41-ap-mEr"/>
+                            <constraint firstItem="bh3-wr-D02" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cm6-QP-G5R"/>
+                            <constraint firstItem="HT8-v1-HXf" firstAttribute="leading" secondItem="2wo-fx-7Ek" secondAttribute="leading" id="ly1-qC-Jwd"/>
+                            <constraint firstItem="bh3-wr-D02" firstAttribute="trailing" secondItem="iEL-QB-s4A" secondAttribute="trailing" id="m6O-Kv-rqt"/>
+                            <constraint firstItem="YJp-Mg-WUL" firstAttribute="top" secondItem="iEL-QB-s4A" secondAttribute="bottom" constant="29" id="meW-Vi-RY2"/>
+                            <constraint firstItem="bh3-wr-D02" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n2X-au-zay"/>
+                            <constraint firstItem="YJp-Mg-WUL" firstAttribute="leading" secondItem="HT8-v1-HXf" secondAttribute="leading" id="ojZ-zC-13B"/>
+                            <constraint firstItem="gDS-7i-Ttv" firstAttribute="leading" secondItem="YJp-Mg-WUL" secondAttribute="trailing" constant="81" id="wNC-EE-l9f"/>
+                            <constraint firstItem="gDS-7i-Ttv" firstAttribute="trailing" secondItem="HT8-v1-HXf" secondAttribute="trailing" id="wRE-8B-ZMV"/>
+                            <constraint firstItem="YJp-Mg-WUL" firstAttribute="baseline" secondItem="gDS-7i-Ttv" secondAttribute="baseline" id="xCr-5s-VKR"/>
+                            <constraint firstItem="iEL-QB-s4A" firstAttribute="trailing" secondItem="gDS-7i-Ttv" secondAttribute="trailing" id="xjD-Pt-bJJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="instructions_label" destination="HT8-v1-HXf" id="aJN-zf-TWK"/>
+                        <outlet property="maximum_field" destination="gDS-7i-Ttv" id="hVn-FZ-7aM"/>
+                        <outlet property="minimum_field" destination="YJp-Mg-WUL" id="nfU-up-JDM"/>
+                        <outlet property="substring_label" destination="2wo-fx-7Ek" id="aLd-FU-9UM"/>
+                        <outlet property="word_field" destination="iEL-QB-s4A" id="ajA-57-Ns8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.5"/>
+        </scene>
+    </scenes>
+</document>
